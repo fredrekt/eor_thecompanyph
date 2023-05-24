@@ -1,3 +1,3 @@
 # EOR | The Company PH
 
-Made with ❤️ by fred
+Made with ❤️ by fred.
