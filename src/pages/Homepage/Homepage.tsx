@@ -3,7 +3,6 @@ import './Homepage.scss';
 import Layout from '../../layout/Layout';
 import Section from '../../components/section/Section';
 import { Button, Col, Row, Typography } from 'antd';
-import heroImage from '../../assets/images/hero.png'
 import heroImageOverlay from '../../assets/images/hero_with_overlay.webp'
 import logo from '../../assets/images/black_logo.png';
 
