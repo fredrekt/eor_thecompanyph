@@ -9,7 +9,7 @@ const Homepage: React.FC = () => {
 	return (
 		<Layout className="homepageContainer">
 			<Section className='heroBanner'>
-                <img className='heroImage' src={heroImage} alt="hero image" />
+                <img className='heroImage' src={heroImage} alt="hero banner" />
                 <Typography.Title>
                     Expand faster in the <span className='underline'>philippines</span>
                 </Typography.Title>
