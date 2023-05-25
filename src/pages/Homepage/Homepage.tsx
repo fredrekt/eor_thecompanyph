@@ -4,12 +4,13 @@ import Layout from '../../layout/Layout';
 import Section from '../../components/section/Section';
 import { Button, Col, Row, Typography } from 'antd';
 import heroImage from '../../assets/images/hero.png'
+import heroImageOverlay from '../../assets/images/hero_with_overlay.webp'
 
 const Homepage: React.FC = () => {
 	return (
 		<Layout className="homepageContainer">
 			<Section className='heroBannerSection'>
-                <img className='heroImage' src={`https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg`} alt="hero banner" />
+                <img className='heroImage' src={heroImageOverlay} alt="hero banner" />
                 <Row className='heroBannerContentRow'>
                     <Col lg={5} xl={5} xxl={5}>
                         <Typography.Title className='heroBannerTitle'>
