@@ -31,6 +31,14 @@
             object-fit: cover;
             object-position: center;
         }
+        .heroLogoContainer {
+            position: relative;
+            width: 150px;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
         .heroBannerContentRow {
             width: 100%;
             padding-bottom: 50px;
