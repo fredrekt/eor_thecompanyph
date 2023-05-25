@@ -2,35 +2,62 @@ import React from 'react';
 import './Homepage.scss';
 import Layout from '../../layout/Layout';
 import Section from '../../components/section/Section';
-import { Typography } from 'antd';
+import { Button, Col, Row, Typography } from 'antd';
 import heroImage from '../../assets/images/hero.png'
 
 const Homepage: React.FC = () => {
 	return (
 		<Layout className="homepageContainer">
 			<Section className='heroBannerSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    Expand faster in the <span className='underline'>philippines</span>
-                </Typography.Title>
+                <img className='heroImage' src={`https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg`} alt="hero banner" />
+                <Row className='heroBannerContentRow'>
+                    <Col lg={5} xl={5} xxl={5}>
+                        <Typography.Title className='heroBannerTitle'>
+                            Expand faster in the <span className='underline'>Philippines</span>
+                        </Typography.Title>
+                        <Typography.Paragraph className='heroBannerSubtxt'>
+                            Hire and manage teams through us, without establishing your own local entity.
+                        </Typography.Paragraph>
+                    </Col>
+                </Row>
             </Section>
             <Section className='jumbotronSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    Expand faster in the <span className='underline'>philippines</span>
-                </Typography.Title>
+                <Row justify={'center'} className='jumbotronContentRow'>
+                    <Col lg={18}>
+                        <Typography.Paragraph className='jumbotronSubtxt'>
+                            You can focus on your team's productivity as we
+                        </Typography.Paragraph>
+                        <Typography.Title className='jumbotronHeadingTxt'>
+                            Manage employee contracts, payroll & tax, labor compliance, global workspace solutions, & human resources for you
+                        </Typography.Title>
+                    </Col>
+                </Row>
             </Section>
             <Section className='featureSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    What We Offer
-                </Typography.Title>
+                <Row className='featureSectionRow' justify={'center'}>
+                    <Col lg={16} xl={16} xxl={16}>
+                        <Typography.Title className='featureSectionHeaderTxt'>
+                            What We Offer
+                        </Typography.Title>
+                        <Typography.Paragraph className='featureSectionSubTxt'>
+                            Focus on other revenue-generating activities as we offer you the following services.
+                        </Typography.Paragraph>
+                    </Col>
+                </Row>
             </Section>
             <Section className='stepSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    The Process
-                </Typography.Title>
+                <Row gutter={[32, 32]} className='stepSectionRow' justify={'center'}>
+                    <Col lg={3} xl={3} xxl={3}>
+                        <Typography.Title className='stepSectionHeaderTxt'>
+                            The Process
+                        </Typography.Title>
+                    </Col>
+                    <Col lg={13} xl={13} xxl={13}>
+                        <Typography.Paragraph className='stepSectionSubTxt'>
+                            Details regarding the process of the relationship here; highlight experience
+                        </Typography.Paragraph>
+                    </Col>
+                </Row>
             </Section>
             <Section className='testimonialSection'>
                 <img className='heroImage' src={heroImage} alt="hero banner" />
@@ -45,16 +72,29 @@ const Homepage: React.FC = () => {
                 </Typography.Title>
             </Section>
             <Section className='blogSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    Blog
-                </Typography.Title>
+                <Row className='blogSectionRow' justify={'center'}>
+                    <Col lg={16} xl={16} xxl={16}>
+                        <Typography.Title className='blogSectionHeaderTxt'>
+                            Blog
+                        </Typography.Title>
+                        <Typography.Paragraph className='blogSectionSubTxt'>
+                            Articles related to EOR will be here,
+                        </Typography.Paragraph>
+                    </Col>
+                </Row>
             </Section>
             <Section className='contactUsSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    Book a consultation today
-                </Typography.Title>
+                <img className='heroImageContactUs' src={`https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg`} alt="hero banner" />
+                <Row className='heroContactBannerContentRow'>
+                    <Col lg={5} xl={5} xxl={5}>
+                        <Typography.Title className='heroContactBannerTitle'>
+                            Book a consultation today
+                        </Typography.Title>
+                        <Button shape='round' className='callCta' href="callto:+12345678910">
+                            +123-456-7890
+                        </Button>
+                    </Col>
+                </Row>
             </Section>
 		</Layout>
 	);
