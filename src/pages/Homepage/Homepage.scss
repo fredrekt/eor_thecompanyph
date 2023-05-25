@@ -48,6 +48,7 @@
     .jumbotronSection {
         background-color: #888F70;
         .jumbotronContentRow {
+            width: 100%;
             padding-top: 150px;
             padding-bottom: 150px;
             .ant-typography {
@@ -68,6 +69,7 @@
     .featureSection {
         background-color: #D4DDB7;
         .featureSectionRow {
+            width: 100%;
             .ant-typography {
                 text-align: center;
             }
@@ -85,6 +87,7 @@
     .stepSection {
         background-color: #EFF0EC;
         .stepSectionRow {
+            width: 100%;
             .stepSectionHeaderTxt {
                 text-align: right;
                 font-size: 63.3px;
@@ -101,13 +104,36 @@
     }
     .testimonialSection {
         background-color: #888F70;
+        .testimonialSectionRow {
+            width: 100%;
+            .testimonialSectionHeaderTxt {
+                margin-top: 0;
+                font-size: 47px;
+                font-weight: bold;
+            }
+        }
     }
     .demoSection {
         background-color: #D4DDB7;
+        .demoSectionRow {
+            width: 100%;
+            .heroImage {
+                width: 95%;
+            }
+            .demoSectionHeaderTxt {
+                font-size: 47px;
+                font-weight: bold;
+            }
+            .demoSectionSubTxt {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
     }
     .blogSection {
         background-color: #EFF0EC;
         .blogSectionRow {
+            width: 100%;
             .ant-typography {
                 text-align: center;
             }
@@ -138,6 +164,7 @@
         .heroContactBannerContentRow {
             padding-top: 150px;
             padding-bottom: 50px;
+            width: 100%;
             .heroContactBannerTitle {
                 font-family: 'CodecPro';
                 font-size: 63.3px;

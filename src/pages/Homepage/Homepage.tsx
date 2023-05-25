@@ -65,16 +65,35 @@ const Homepage: React.FC = () => {
                 </Row>
             </Section>
             <Section className='testimonialSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    Our Clients' Journey
-                </Typography.Title>
+                <Row className='testimonialSectionRow' justify={'center'}>
+                    <Col lg={8} xl={8} xxl={8}>
+                        <Typography.Title className='testimonialSectionHeaderTxt'>
+                            Our Clients' Journey
+                        </Typography.Title>
+                    </Col>
+                    <Col lg={16} xl={16} xxl={16}>
+                        <Typography.Paragraph>
+                            Feature case studies of our clients here; highlight cost-effectivity and ease of starting
+                        </Typography.Paragraph>
+                        <Button size="large" shape="round">READ OUR CASE STUDIES</Button>
+                    </Col>
+                </Row>
             </Section>
             <Section className='demoSection'>
-                <img className='heroImage' src={heroImage} alt="hero banner" />
-                <Typography.Title>
-                    What's next
-                </Typography.Title>
+                <Row className='demoSectionRow'>
+                    <Col lg={12} xl={12} xxl={12}>
+                        <img className='heroImage' src={`https://images.pexels.com/photos/3183202/pexels-photo-3183202.jpeg`} alt="hero banner" />
+                    </Col>
+                    <Col lg={12} xl={12} xxl={12}>
+                        <Typography.Title className='demoSectionHeaderTxt'>
+                            What's next
+                        </Typography.Title>
+                        <Typography.Paragraph className='demoSectionSubTxt'>
+                            Focus on other revenue-generating activities as we offer you the following services.
+                        </Typography.Paragraph>
+                        <Button size="large" shape="round">REQUEST A DEMO</Button>
+                    </Col>
+                </Row>
             </Section>
             <Section className='blogSection'>
                 <Row className='blogSectionRow' justify={'center'}>
