@@ -85,13 +85,17 @@ const Homepage: React.FC = () => {
                         <img className='heroImage' src={`https://images.pexels.com/photos/3183202/pexels-photo-3183202.jpeg`} alt="hero banner" />
                     </Col>
                     <Col lg={12} xl={12} xxl={12}>
-                        <Typography.Title className='demoSectionHeaderTxt'>
-                            What's next
-                        </Typography.Title>
-                        <Typography.Paragraph className='demoSectionSubTxt'>
-                            Focus on other revenue-generating activities as we offer you the following services.
-                        </Typography.Paragraph>
-                        <Button size="large" shape="round">REQUEST A DEMO</Button>
+                        <div className="demoSectionContent">
+                            <div className="demoSectionTxtContent">
+                                <Typography.Title className='demoSectionHeaderTxt'>
+                                    What's next
+                                </Typography.Title>
+                                <Typography.Paragraph className='demoSectionSubTxt'>
+                                    Focus on other revenue-generating activities as we offer you the following services.
+                                </Typography.Paragraph>
+                            </div>
+                            <Button size="large" shape="round">REQUEST A DEMO</Button>
+                        </div>
                     </Col>
                 </Row>
             </Section>

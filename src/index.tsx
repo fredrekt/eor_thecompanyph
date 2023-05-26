@@ -13,7 +13,7 @@ root.render(
 				token: {
 					colorPrimary: '#3F4726',
 					fontFamily: 'CodecPro',
-				}
+				},
 			}}
 		>
 		<Router>
