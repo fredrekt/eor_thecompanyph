@@ -5,6 +5,7 @@ import Section from '../../components/section/Section';
 import { Button, Col, Row, Typography } from 'antd';
 import heroImageOverlay from '../../assets/images/hero_with_overlay.webp'
 import logo from '../../assets/images/black_logo.png';
+import BlogCard from '../../components/blogCard/BlogCard';
 
 const Homepage: React.FC = () => {
 	return (
@@ -105,11 +106,55 @@ const Homepage: React.FC = () => {
                         </Typography.Paragraph>
                     </Col>
                 </Row>
+                <Row gutter={[48, 48]} className='blogSectionContentRow'>
+                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+                        <BlogCard
+                            title="Cost Calculator"
+                            previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                            link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                        />
+                    </Col>
+                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+                        <BlogCard
+                            title="EOR vs Contractor Management"
+                            previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                            link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                        />
+                    </Col>
+                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+                        <BlogCard
+                            title="Labor Law in the Philippines"
+                            previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                            link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                        />
+                    </Col>
+                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+                        <BlogCard
+                            title="Incorporating in the Philippines"
+                            previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                            link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                        />
+                    </Col>
+                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+                        <BlogCard
+                            title="PH Recruitment Strategies"
+                            previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                            link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                        />
+                    </Col>
+                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+                        <BlogCard
+                            title="Labor Law in the Philippines"
+                            previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                            link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+                        />
+                    </Col>
+                </Row>
             </Section>
             <Section className='contactUsSection'>
                 <img className='heroImageContactUs' src={`https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg`} alt="hero banner" />
                 <Row className='heroContactBannerContentRow'>
-                    <Col lg={5} xl={5} xxl={5}>
+                    <Col lg={10} xl={7} xxl={6}>
                         <Typography.Title className='heroContactBannerTitle'>
                             Book a consultation today
                         </Typography.Title>
