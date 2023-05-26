@@ -52,7 +52,7 @@ const Homepage: React.FC = () => {
             </Section>
             <Section className='stepSection'>
                 <Row gutter={[32, 32]} className='stepSectionRow' justify={'center'}>
-                    <Col lg={3} xl={3} xxl={3}>
+                    <Col lg={7} xl={6} xxl={5}>
                         <Typography.Title className='stepSectionHeaderTxt'>
                             The Process
                         </Typography.Title>
