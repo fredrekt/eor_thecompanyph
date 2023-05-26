@@ -18,7 +18,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, previewImgUrl, link }) => {
         <Typography.Title className="blogCardTitle" level={4}>
           {title}
         </Typography.Title>
-        <Button size='large' shape='round' className="blogCardCta" href={link}>
+        <Button type='primary' shape='round' className="blogCardCta" href={link}>
           Learn more
         </Button>
       </div>
