@@ -2,6 +2,11 @@
 	height: 225px;
 	.stepCardDesc {
 		font-family: 'Nunito', sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
 	}
 	/**
     * Basic CSS Media Query Template
