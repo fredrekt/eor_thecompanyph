@@ -86,31 +86,31 @@ const Homepage: React.FC = () => {
 					</Col>
 				</Row>
                 <Row justify={'center'} gutter={[24, 24]}>
-                    <Col lg={4} xl={4} xxl={4}>
+                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
                         <StepCard
                             title='Initial Consult'
                             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
                         />
                     </Col>
-                    <Col lg={4} xl={4} xxl={4}>
+                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
                         <StepCard
                             title='Sourcing & Initial Interview'
                             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
                         />
                     </Col>
-                    <Col lg={4} xl={4} xxl={4}>
+                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
                         <StepCard
                             title='Contract Signing'
                             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
                         />
                     </Col>
-                    <Col lg={4} xl={4} xxl={4}>
+                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
                         <StepCard
                             title='Employee Onboard & Set-up'
                             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
                         />
                     </Col>
-                    <Col lg={4} xl={4} xxl={4}>
+                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
                         <StepCard
                             title='Continuous Support & Partnership'
                             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
