@@ -109,12 +109,42 @@
     }
     .testimonialSection {
         background-color: #888F70;
+        padding: 0;
         .testimonialSectionRow {
             width: 100%;
+            .testimonialLeft {
+                padding: 80px;
+            }
+            .testimonialRight {
+                padding-bottom: 80px;
+                .testimonialRightContent {
+                    margin-top: 40px;
+                    .testimonialRightTxt {
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 40px;
+                    }
+                    button {
+                        background-color: #00906D;
+                        color: #EFF0EC;
+                        border: unset;
+                    }
+                }
+            }
             .testimonialSectionHeaderTxt {
                 margin-top: 0;
                 font-size: 47px;
                 font-weight: bold;
+                text-align: right;
+                width: 65%;
+                margin-left: auto;
+            }
+            .testimonialImg {
+                width: 100%;
+                border-radius: 0 0 0 40px;
+                height: 450px;
+                object-fit: cover;
+                object-position: center;
             }
         }
     }

@@ -87,18 +87,21 @@ const Homepage: React.FC = () => {
 			</Section>
 			<Section className="testimonialSection">
 				<Row className="testimonialSectionRow" justify={'center'}>
-					<Col lg={8} xl={8} xxl={8}>
+					<Col className='testimonialLeft' lg={10} xl={10} xxl={10}>
 						<Typography.Title className="testimonialSectionHeaderTxt">
 							Our Clients' Journey
 						</Typography.Title>
 					</Col>
-					<Col lg={16} xl={16} xxl={16}>
-						<Typography.Paragraph>
-							Feature case studies of our clients here; highlight cost-effectivity and ease of starting
-						</Typography.Paragraph>
-						<Button size="large" shape="round">
-							READ OUR CASE STUDIES
-						</Button>
+					<Col className='testimonialRight' lg={14} xl={14} xxl={14}>
+                        <img src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg" alt="testimonial preview" className="testimonialImg" />
+						<div className="testimonialRightContent">
+                            <Typography.Paragraph className='testimonialRightTxt'>
+                                Feature case studies of our clients here; highlight cost-effectivity and ease of starting
+                            </Typography.Paragraph>
+                            <Button size="large" shape="round">
+                                READ OUR CASE STUDIES
+                            </Button>
+                        </div>
 					</Col>
 				</Row>
 			</Section>
