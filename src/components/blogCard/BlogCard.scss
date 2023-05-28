@@ -1,35 +1,35 @@
 .blogCard {
-    padding: 50px;
-    .blogCardPreviewImgContainer {
-        width: 100%;
-        height: 250px;
-        margin: auto;
-        img {
-            width: 100%;
-            object-fit: cover;
-            height: 100%;
-            object-position: center;
-            border-radius: 40px;
-        }
-    }
-    .blogCardContent {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: 15px;
-        padding: 0 40px;
-        .blogCardTitle {
-            font-weight: bold;
-            font-family: 'CodecPro';
-            font-size: 25px;
-        }
-        .blogCardCta {
-            text-transform: uppercase;
-            box-shadow: unset!important;
-            width: 200px;
-        }
-    }
+	padding: 50px;
+	.blogCardPreviewImgContainer {
+		width: 100%;
+		height: 250px;
+		margin: auto;
+		img {
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+			object-position: center;
+			border-radius: 40px;
+		}
+	}
+	.blogCardContent {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		gap: 20px;
+		margin-top: 15px;
+		padding: 0 40px;
+		.blogCardTitle {
+			font-weight: bold;
+			font-family: 'CodecPro';
+			font-size: 25px;
+		}
+		.blogCardCta {
+			text-transform: uppercase;
+			box-shadow: unset !important;
+			width: 200px;
+		}
+	}
 }

@@ -1,9 +1,7 @@
 @font-face {
-	font-family: "CodecPro";   /*Can be any text*/
-	src: local("CodecPro"),
-	  url("./fonts/CodecPro-Regular.ttf") format("truetype");
+	font-family: 'CodecPro'; /*Can be any text*/
+	src: local('CodecPro'), url('./fonts/CodecPro-Regular.ttf') format('truetype');
 }
-
 
 html {
 	height: 100%;

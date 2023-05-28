@@ -58,14 +58,14 @@ const Homepage: React.FC = () => {
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
-                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<FeatureCard
 							title="EOR vs Contractor Management"
 							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
-                    <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<FeatureCard
 							title="EOR vs Contractor Management"
 							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
@@ -85,56 +85,61 @@ const Homepage: React.FC = () => {
 						</Typography.Paragraph>
 					</Col>
 				</Row>
-                <Row justify={'center'} gutter={[24, 24]}>
-                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-                        <StepCard
-                            title='Initial Consult'
-                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
-                        />
-                    </Col>
-                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-                        <StepCard
-                            title='Sourcing & Initial Interview'
-                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
-                        />
-                    </Col>
-                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-                        <StepCard
-                            title='Contract Signing'
-                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
-                        />
-                    </Col>
-                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-                        <StepCard
-                            title='Employee Onboard & Set-up'
-                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
-                        />
-                    </Col>
-                    <Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-                        <StepCard
-                            title='Continuous Support & Partnership'
-                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
-                        />
-                    </Col>
-                </Row>
+				<Row justify={'center'} gutter={[24, 24]}>
+					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
+						<StepCard
+							title="Initial Consult"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
+						/>
+					</Col>
+					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
+						<StepCard
+							title="Sourcing & Initial Interview"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
+						/>
+					</Col>
+					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
+						<StepCard
+							title="Contract Signing"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
+						/>
+					</Col>
+					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
+						<StepCard
+							title="Employee Onboard & Set-up"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
+						/>
+					</Col>
+					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
+						<StepCard
+							title="Continuous Support & Partnership"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
+						/>
+					</Col>
+				</Row>
 			</Section>
 			<Section className="testimonialSection">
 				<Row className="testimonialSectionRow" justify={'center'}>
-					<Col className='testimonialLeft' lg={10} xl={10} xxl={10}>
+					<Col className="testimonialLeft" lg={10} xl={10} xxl={10}>
 						<Typography.Title className="testimonialSectionHeaderTxt">
 							Our Clients' Journey
 						</Typography.Title>
 					</Col>
-					<Col className='testimonialRight' lg={14} xl={14} xxl={14}>
-                        <img src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg" alt="testimonial preview" className="testimonialImg" />
+					<Col className="testimonialRight" lg={14} xl={14} xxl={14}>
+						<img
+							src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg"
+							alt="testimonial preview"
+							className="testimonialImg"
+						/>
 						<div className="testimonialRightContent">
-                            <Typography.Paragraph className='testimonialRightTxt'>
-                                Feature case studies of our clients here; highlight cost-effectivity and ease of starting
-                            </Typography.Paragraph>
-                            <Button size="large" shape="round">
-                                READ OUR CASE STUDIES
-                            </Button>
-                        </div>
+							<Typography.Paragraph className="testimonialRightTxt">
+								Feature case studies of our clients here; highlight cost-effectivity and ease of
+								starting
+							</Typography.Paragraph>
+							<Button size="large" shape="round">
+								READ OUR CASE STUDIES
+							</Button>
+						</div>
 					</Col>
 				</Row>
 			</Section>

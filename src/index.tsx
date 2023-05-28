@@ -12,13 +12,13 @@ root.render(
 			theme={{
 				token: {
 					colorPrimary: '#3F4726',
-					fontFamily: 'CodecPro',
-				},
+					fontFamily: 'CodecPro'
+				}
 			}}
 		>
-		<Router>
-			<App />
-		</Router>
+			<Router>
+				<App />
+			</Router>
 		</ConfigProvider>
 	</React.StrictMode>
 );
