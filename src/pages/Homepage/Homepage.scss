@@ -278,6 +278,23 @@
                 margin-right: unset!important;
             }
         }
+        .stepSection {
+            .stepSectionRow {
+                row-gap: 0!important;
+                margin-bottom: 15px;
+                .stepSectionHeaderTxt {
+                    text-align: right;
+                    word-spacing: normal;
+                    font-size: 45px;
+                    margin-bottom: 7px;
+                }
+                .stepSectionSubTxt {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                }
+            }
+        }
 	}
 
 	@media all and (min-width: 768px) and (max-width: 1024px) {
@@ -315,6 +332,22 @@
                 margin-right: unset!important;
             }
         }
+        .stepSection {
+            .stepSectionRow {
+                row-gap: 0!important;
+                .stepSectionHeaderTxt {
+                    text-align: center;
+                    word-spacing: normal;
+                    font-size: 45px;
+                    margin-bottom: 7px;
+                }
+                .stepSectionSubTxt {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                }
+            }
+        }
 	}
 
 	@media all and (min-width: 480px) and (max-width: 768px) {
@@ -350,6 +383,22 @@
             .featureSectionContentRow {
                 margin-left: unset!important;
                 margin-right: unset!important;
+            }
+        }
+        .stepSection {
+            .stepSectionRow {
+                row-gap: 0!important;
+                .stepSectionHeaderTxt {
+                    text-align: center;
+                    word-spacing: normal;
+                    font-size: 45px;
+                    margin-bottom: 7px;
+                }
+                .stepSectionSubTxt {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                }
             }
         }
 	}
@@ -390,6 +439,21 @@
             .featureSectionContentRow {
                 margin-left: unset!important;
                 margin-right: unset!important;
+            }
+        }
+        .stepSection {
+            .stepSectionRow {
+                row-gap: 0!important;
+                .stepSectionHeaderTxt {
+                    text-align: center;
+                    word-spacing: normal;
+                    font-size: 35px;
+                }
+                .stepSectionSubTxt {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                }
             }
         }
 	}
