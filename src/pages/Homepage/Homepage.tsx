@@ -8,6 +8,7 @@ import logo from '../../assets/images/black_logo.png';
 import BlogCard from '../../components/blogCard/BlogCard';
 import FeatureCard from '../../components/featureCard/FeatureCard';
 import StepCard from '../../components/stepCard/StepCard';
+import { FloatButton } from 'antd';
 
 const Homepage: React.FC = () => {
 	return (
@@ -255,6 +256,7 @@ const Homepage: React.FC = () => {
 					</Col>
 				</Row>
 			</Section>
+            <FloatButton.BackTop type="primary" />
 		</Layout>
 	);
 };
