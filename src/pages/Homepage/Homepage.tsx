@@ -7,6 +7,7 @@ import heroImageOverlay from '../../assets/images/hero_with_overlay.webp';
 import logo from '../../assets/images/black_logo.png';
 import BlogCard from '../../components/blogCard/BlogCard';
 import FeatureCard from '../../components/featureCard/FeatureCard';
+import StepCard from '../../components/stepCard/StepCard';
 
 const Homepage: React.FC = () => {
 	return (
@@ -84,6 +85,38 @@ const Homepage: React.FC = () => {
 						</Typography.Paragraph>
 					</Col>
 				</Row>
+                <Row justify={'center'} gutter={[24, 24]}>
+                    <Col lg={4} xl={4} xxl={4}>
+                        <StepCard
+                            title='Initial Consult'
+                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
+                        />
+                    </Col>
+                    <Col lg={4} xl={4} xxl={4}>
+                        <StepCard
+                            title='Sourcing & Initial Interview'
+                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
+                        />
+                    </Col>
+                    <Col lg={4} xl={4} xxl={4}>
+                        <StepCard
+                            title='Contract Signing'
+                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
+                        />
+                    </Col>
+                    <Col lg={4} xl={4} xxl={4}>
+                        <StepCard
+                            title='Employee Onboard & Set-up'
+                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
+                        />
+                    </Col>
+                    <Col lg={4} xl={4} xxl={4}>
+                        <StepCard
+                            title='Continuous Support & Partnership'
+                            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt.'
+                        />
+                    </Col>
+                </Row>
 			</Section>
 			<Section className="testimonialSection">
 				<Row className="testimonialSectionRow" justify={'center'}>
