@@ -267,6 +267,17 @@
                 }
             }
         }
+        .featureSection {
+            .featureSectionRow  {
+                .featureSectionHeaderTxt {
+                    font-size: 35px;
+                }
+            }
+            .featureSectionContentRow {
+                margin-left: unset!important;
+                margin-right: unset!important;
+            }
+        }
 	}
 
 	@media all and (min-width: 768px) and (max-width: 1024px) {
@@ -293,6 +304,17 @@
                 }
             }
         }
+        .featureSection {
+            .featureSectionRow  {
+                .featureSectionHeaderTxt {
+                    font-size: 35px;
+                }
+            }
+            .featureSectionContentRow {
+                margin-left: unset!important;
+                margin-right: unset!important;
+            }
+        }
 	}
 
 	@media all and (min-width: 480px) and (max-width: 768px) {
@@ -317,6 +339,17 @@
                 .jumbotronHeadingTxt {
                     font-size: 35px;
                 }
+            }
+        }
+        .featureSection {
+            .featureSectionRow  {
+                .featureSectionHeaderTxt {
+                    font-size: 35px;
+                }
+            }
+            .featureSectionContentRow {
+                margin-left: unset!important;
+                margin-right: unset!important;
             }
         }
 	}
@@ -346,6 +379,17 @@
                 .jumbotronHeadingTxt {
                     font-size: 25px;
                 }
+            }
+        }
+        .featureSection {
+            .featureSectionRow  {
+                .featureSectionHeaderTxt {
+                    font-size: 25px;
+                }
+            }
+            .featureSectionContentRow {
+                margin-left: unset!important;
+                margin-right: unset!important;
             }
         }
 	}

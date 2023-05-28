@@ -50,7 +50,24 @@ const Homepage: React.FC = () => {
 						</Typography.Paragraph>
 					</Col>
 				</Row>
-				<Row gutter={[48, 48]} className="featureSectionContentRow">
+				<Row gutter={[
+                    {
+                        xs: 24,
+                        sm: 24,
+                        md: 24,
+                        lg: 48,
+                        xl: 48,
+                        xxl: 48,
+                    },
+                    {
+                        xs: 24,
+                        sm: 24,
+                        md: 24,
+                        lg: 48,
+                        xl: 48,
+                        xxl: 48,
+                    }
+                ]} justify={`center`} className="featureSectionContentRow">
 					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<FeatureCard
 							title="EOR vs Contractor Management"
