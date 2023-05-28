@@ -16,7 +16,7 @@ const Homepage: React.FC = () => {
                     <img src={logo} alt="the company cebu" />
                 </div>
                 <Row className='heroBannerContentRow'>
-                    <Col lg={5} xl={5} xxl={5}>
+                    <Col lg={10} xl={8} xxl={7}>
                         <Typography.Title className='heroBannerTitle'>
                             Expand faster in the <span className='underline'>Philippines</span>
                         </Typography.Title>
