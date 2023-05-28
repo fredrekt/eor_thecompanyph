@@ -244,14 +244,109 @@
     * --------------------------------------------
     */
 	@media all and (min-width: 1024px) and (max-width: 1280px) {
+        .heroBannerSection {
+            .heroImage {
+                opacity: 0.5;
+            }
+            .heroBannerContentRow {
+                padding-top: 100px;
+                .heroBannerTitle {
+                    font-size: 45px;
+                }
+            }
+        }
+        .jumbotronSection {
+            .jumbotronContentRow {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .jumbotronSubtxt {
+                    font-size: 20px;
+                }
+                .jumbotronHeadingTxt {
+                    font-size: 35px;
+                }
+            }
+        }
 	}
 
 	@media all and (min-width: 768px) and (max-width: 1024px) {
+        .heroBannerSection {
+            .heroImage {
+                opacity: 0.5;
+            }
+            .heroBannerContentRow {
+                padding-top: 100px;
+                .heroBannerTitle {
+                    font-size: 45px;
+                }
+            }
+        }
+        .jumbotronSection {
+            .jumbotronContentRow {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .jumbotronSubtxt {
+                    font-size: 20px;
+                }
+                .jumbotronHeadingTxt {
+                    font-size: 35px;
+                }
+            }
+        }
 	}
 
 	@media all and (min-width: 480px) and (max-width: 768px) {
+        .heroBannerSection {
+            .heroImage {
+                opacity: 0.5;
+            }
+            .heroBannerContentRow {
+                padding-top: 100px;
+                .heroBannerTitle {
+                    font-size: 45px;
+                }
+            }
+        }
+        .jumbotronSection {
+            .jumbotronContentRow {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .jumbotronSubtxt {
+                    font-size: 20px;
+                }
+                .jumbotronHeadingTxt {
+                    font-size: 35px;
+                }
+            }
+        }
 	}
 
 	@media all and (max-width: 480px) {
+        .sectionContainer {
+            padding: 50px 30px;
+        }
+        .heroBannerSection {
+            .heroImage {
+                opacity: 0.5;
+            }
+            .heroBannerContentRow {
+                padding-top: 90px;
+                .heroBannerTitle {
+                    font-size: 35px;
+                }
+            }
+        }
+        .jumbotronSection {
+            .jumbotronContentRow {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .jumbotronSubtxt {
+                    font-size: 15px;
+                }
+                .jumbotronHeadingTxt {
+                    font-size: 25px;
+                }
+            }
+        }
 	}
 }
