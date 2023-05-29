@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Homepage.scss';
 import Layout from '../../layout/Layout';
 import Section from '../../components/section/Section';
-import { Button, Col, Row, Typography } from 'antd';
+import { Button, Col, Row, Typography, message } from 'antd';
 import logo from '../../assets/images/black_logo.png';
 import BlogCard from '../../components/blogCard/BlogCard';
 import FeatureCard from '../../components/featureCard/FeatureCard';
@@ -11,13 +11,131 @@ import { FloatButton } from 'antd';
 import { Link } from 'react-router-dom';
 import contactHero from '../../assets/images/contact.png';
 import testimonialHero from '../../assets/images/testimonial.png';
-import feature1 from '../../assets/images/feature1.png';
-import feature2 from '../../assets/images/feature2.png';
-import feature3 from '../../assets/images/feature3.png';
-import feature4 from '../../assets/images/feature4.png';
-import feature5 from '../../assets/images/feature5.png';
+import axios from 'axios';
+
+interface WPPost {
+	id: number;
+	title: {
+		rendered: string;
+	};
+	link: string;
+	_embedded: any;
+}
 
 const Homepage: React.FC = () => {
+	const [blogs, setBlogs] = useState<WPPost[]>([]);
+	const [steps, setSteps] = useState<WPPost[]>([]);
+	const [features, setFeatures] = useState<WPPost[]>([]);
+
+	useEffect(() => {
+		loadBlogs();
+		loadFeatures();
+		loadSteps();
+	}, []);
+
+	const loadFeatures = async () => {
+		const endpoint = 'https://thecompany.ph/wp-json/wp/v2/posts';
+		const categoryId = 26; // Replace with the ID of the category you want to filter by
+		const params = {
+			categories: categoryId,
+			orderby: 'date', // Order posts by date
+			order: 'desc', // Sort posts in descending order
+			_embed: true // Include embedded data, such as featured images
+		};
+
+		try {
+			const response = await axios.get(endpoint, { params });
+			setFeatures(response.data);
+		} catch (error) {
+			message.error(`Something wen't wrong in getting blog feed.`);
+		}
+	};
+
+	const loadSteps = async () => {
+		const endpoint = 'https://thecompany.ph/wp-json/wp/v2/posts';
+		const categoryId = 25; // Replace with the ID of the category you want to filter by
+		const params = {
+			_fields: 'id,title',
+			categories: categoryId,
+			orderby: 'date',
+			order: 'asc',
+		};
+
+		try {
+			const response = await axios.get(endpoint, { params });
+			setSteps(response.data);
+		} catch (error) {
+			message.error(`Something wen't wrong in getting blog feed.`);
+		}
+	};
+
+	const loadBlogs = async () => {
+		const endpoint = 'https://thecompany.ph/wp-json/wp/v2/posts';
+		const categoryId = 9; // Replace with the ID of the category you want to filter by
+		const params = {
+			categories: categoryId,
+			orderby: 'date', // Order posts by date
+			order: 'desc', // Sort posts in descending order
+			_embed: true // Include embedded data, such as featured images
+		};
+
+		try {
+			const response = await axios.get(endpoint, { params });
+			setBlogs(response.data);
+		} catch (error) {
+			message.error(`Something wen't wrong in getting blog feed.`);
+		}
+	};
+
+	const renderBlogs = () => {
+		if (!Array.isArray(blogs) || !blogs.length) return;
+		return blogs.map((data) => (
+			<Col key={data.id} xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+				<BlogCard
+					title={extractStringFromHTML(data.title.rendered)}
+					previewImgUrl={data._embedded['wp:featuredmedia'][0].source_url}
+					link={data.link}
+				/>
+			</Col>
+		));
+	};
+
+	const renderSteps = () => {
+		if (!Array.isArray(steps) || !steps.length) return;
+		return steps.map((data) => (
+			<Col key={data.id} xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
+				<StepCard
+					title={extractStringFromHTML(data.title.rendered)}
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
+				/>
+			</Col>
+		));
+	};
+
+	const renderFeatures = () => {
+		if (!Array.isArray(features) || !features.length) return;
+		return features.map((data) => (
+			<Col key={data.id} xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+				<FeatureCard
+					title={extractStringFromHTML(data.title.rendered)}
+					previewImgUrl={data._embedded['wp:featuredmedia'][0].source_url}
+					link={data.link}
+				/>
+			</Col>
+		));
+	};
+
+	const extractStringFromHTML = (html: any) => {
+		const parser = new DOMParser();
+		const doc = parser.parseFromString(html, 'text/html');
+		const textContent = doc.body.textContent || '';
+	  
+		// Replace any HTML entities like ampersands with their corresponding characters
+		const decodedText = textContent.replace(/&amp;/g, '&');
+	  
+		return decodedText.trim();
+	  }
+
 	return (
 		<Layout className="homepageContainer">
 			<Section className="heroBannerSection">
@@ -57,45 +175,29 @@ const Homepage: React.FC = () => {
 						</Typography.Paragraph>
 					</Col>
 				</Row>
-				<Row gutter={[
-                    {
-                        xs: 24,
-                        sm: 24,
-                        md: 24,
-                        lg: 48,
-                        xl: 48,
-                        xxl: 48,
-                    },
-                    {
-                        xs: 24,
-                        sm: 24,
-                        md: 24,
-                        lg: 48,
-                        xl: 48,
-                        xxl: 48,
-                    }
-                ]} justify={`center`} className="featureSectionContentRow">
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<FeatureCard
-							title="EOR vs Contractor Management"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<FeatureCard
-							title="EOR vs Contractor Management"
-							previewImgUrl={feature1}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<FeatureCard
-							title="EOR vs Contractor Management"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
+				<Row
+					gutter={[
+						{
+							xs: 24,
+							sm: 24,
+							md: 24,
+							lg: 48,
+							xl: 48,
+							xxl: 48
+						},
+						{
+							xs: 24,
+							sm: 24,
+							md: 24,
+							lg: 48,
+							xl: 48,
+							xxl: 48
+						}
+					]}
+					justify={`center`}
+					className="featureSectionContentRow"
+				>
+					{renderFeatures()}
 				</Row>
 			</Section>
 			<Section className="stepSection">
@@ -110,36 +212,7 @@ const Homepage: React.FC = () => {
 					</Col>
 				</Row>
 				<Row justify={'center'} gutter={[24, 24]}>
-					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-						<StepCard
-							title="Initial Consult"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
-						/>
-					</Col>
-					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-						<StepCard
-							title="Sourcing & Initial Interview"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
-						/>
-					</Col>
-					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-						<StepCard
-							title="Contract Signing"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
-						/>
-					</Col>
-					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-						<StepCard
-							title="Employee Onboard & Set-up"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
-						/>
-					</Col>
-					<Col xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
-						<StepCard
-							title="Continuous Support & Partnership"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
-						/>
-					</Col>
+					{renderSteps()}
 				</Row>
 			</Section>
 			<Section className="testimonialSection">
@@ -150,11 +223,7 @@ const Homepage: React.FC = () => {
 						</Typography.Title>
 					</Col>
 					<Col className="testimonialRight" lg={14} xl={14} xxl={14}>
-						<img
-							src={testimonialHero}
-							alt="testimonial preview"
-							className="testimonialImg"
-						/>
+						<img src={testimonialHero} alt="testimonial preview" className="testimonialImg" />
 						<div className="testimonialRightContent">
 							<Typography.Paragraph className="testimonialRightTxt">
 								Feature case studies of our clients here; highlight cost-effectivity and ease of
@@ -201,70 +270,25 @@ const Homepage: React.FC = () => {
 					</Col>
 				</Row>
 				<Row gutter={[48, 48]} className="blogSectionContentRow">
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<BlogCard
-							title="Cost Calculator"
-							previewImgUrl={feature2}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<BlogCard
-							title="EOR vs Contractor Management"
-							previewImgUrl={feature1}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<BlogCard
-							title="Labor Law in the Philippines"
-							previewImgUrl={feature5}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<BlogCard
-							title="Incorporating in the Philippines"
-							previewImgUrl={feature4}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<BlogCard
-							title="PH Recruitment Strategies"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
-					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
-						<BlogCard
-							title="Labor Law in the Philippines"
-							previewImgUrl={feature3}
-							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
-						/>
-					</Col>
+					{renderBlogs()}
 				</Row>
 			</Section>
 			<Section className="contactUsSection">
-				<img
-					className="heroImageContactUs"
-					src={contactHero}
-					alt="hero banner"
-				/>
+				<img className="heroImageContactUs" src={contactHero} alt="hero banner" />
 				<Row className="heroContactBannerContentRow">
 					<Col lg={10} xl={7} xxl={6}>
 						<Typography.Title className="heroContactBannerTitle">
 							Book a consultation today
 						</Typography.Title>
-                        <Link to="/contact">
-                            <Button shape="round" className="callCta">
-                                Get in touch
-                            </Button>
-                        </Link>
+						<Link to="/contact">
+							<Button shape="round" className="callCta">
+								Get in touch
+							</Button>
+						</Link>
 					</Col>
 				</Row>
 			</Section>
-            <FloatButton.BackTop type="primary" />
+			<FloatButton.BackTop type="primary" />
 		</Layout>
 	);
 };
