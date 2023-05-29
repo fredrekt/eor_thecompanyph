@@ -1,0 +1,64 @@
+.contactPage {
+    .contactFormRow {
+        height: 100%;
+        width: 100%;
+        .contactFormLeftCol {
+            background-color: #888f70;
+            .contactFormLeftContent {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 600px;
+                padding: 80px;
+                .heroLogoContainer {
+                    width: 150px;
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .contactSocialContainer {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        li {
+                            margin: 10px 0;
+                            a {
+                                font-family: 'Nunito', sans-serif;
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: #ffffff;
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                &:hover {
+                                    color: #3f4726;
+                                }
+                            }
+                        }
+                    }
+                    .socialLinks {
+    
+                    }
+                    .publicInfo {
+                       .publicCtaFooter {
+				            font-family: 'Nunito', sans-serif;
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #ffffff;
+                       } 
+                    }
+                }
+            }
+        }
+        .contactFormRightCol {
+            padding: 50px;
+            .contactFormComponent {
+                max-width: 500px;
+            }
+        }
+    }
+}
