@@ -9,6 +9,7 @@ import BlogCard from '../../components/blogCard/BlogCard';
 import FeatureCard from '../../components/featureCard/FeatureCard';
 import StepCard from '../../components/stepCard/StepCard';
 import { FloatButton } from 'antd';
+import { Link } from 'react-router-dom';
 
 const Homepage: React.FC = () => {
 	return (
@@ -250,9 +251,11 @@ const Homepage: React.FC = () => {
 						<Typography.Title className="heroContactBannerTitle">
 							Book a consultation today
 						</Typography.Title>
-						<Button shape="round" className="callCta" href="callto:+12345678910">
-							+123-456-7890
-						</Button>
+                        <Link to="/contact">
+                            <Button shape="round" className="callCta">
+                                Get in touch
+                            </Button>
+                        </Link>
 					</Col>
 				</Row>
 			</Section>
