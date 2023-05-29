@@ -71,9 +71,9 @@ const Homepage: React.FC = () => {
 
 	const loadBlogs = async () => {
 		const endpoint = 'https://thecompany.ph/wp-json/wp/v2/posts';
-		const categoryId = 9; // Replace with the ID of the category you want to filter by
+		const categoryIds = [27, 9]; // Replace with the ID of the category you want to filter by
 		const params = {
-			categories: categoryId,
+			categories: categoryIds.join(','),
 			orderby: 'date', // Order posts by date
 			order: 'desc', // Sort posts in descending order
 			_embed: true // Include embedded data, such as featured images
