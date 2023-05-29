@@ -4,7 +4,12 @@
 	}
 	.heroBannerSection {
 		position: relative;
-		.heroBannerTitle {
+        background-image:
+        url('../../assets/images/heroBanner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .heroBannerTitle {
 			font-family: 'CodecPro';
 			font-size: 63.3px;
 			font-weight: bold;

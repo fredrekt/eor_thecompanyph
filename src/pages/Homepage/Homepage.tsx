@@ -3,19 +3,24 @@ import './Homepage.scss';
 import Layout from '../../layout/Layout';
 import Section from '../../components/section/Section';
 import { Button, Col, Row, Typography } from 'antd';
-import heroImageOverlay from '../../assets/images/hero_with_overlay.webp';
 import logo from '../../assets/images/black_logo.png';
 import BlogCard from '../../components/blogCard/BlogCard';
 import FeatureCard from '../../components/featureCard/FeatureCard';
 import StepCard from '../../components/stepCard/StepCard';
 import { FloatButton } from 'antd';
 import { Link } from 'react-router-dom';
+import contactHero from '../../assets/images/contact.png';
+import testimonialHero from '../../assets/images/testimonial.png';
+import feature1 from '../../assets/images/feature1.png';
+import feature2 from '../../assets/images/feature2.png';
+import feature3 from '../../assets/images/feature3.png';
+import feature4 from '../../assets/images/feature4.png';
+import feature5 from '../../assets/images/feature5.png';
 
 const Homepage: React.FC = () => {
 	return (
 		<Layout className="homepageContainer">
 			<Section className="heroBannerSection">
-				<img className="heroImage" src={heroImageOverlay} alt="hero banner" />
 				<div className="heroLogoContainer">
 					<img src={logo} alt="the company cebu" />
 				</div>
@@ -80,7 +85,7 @@ const Homepage: React.FC = () => {
 					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<FeatureCard
 							title="EOR vs Contractor Management"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+							previewImgUrl={feature1}
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
@@ -146,7 +151,7 @@ const Homepage: React.FC = () => {
 					</Col>
 					<Col className="testimonialRight" lg={14} xl={14} xxl={14}>
 						<img
-							src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg"
+							src={testimonialHero}
 							alt="testimonial preview"
 							className="testimonialImg"
 						/>
@@ -199,28 +204,28 @@ const Homepage: React.FC = () => {
 					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<BlogCard
 							title="Cost Calculator"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+							previewImgUrl={feature2}
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
 					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<BlogCard
 							title="EOR vs Contractor Management"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+							previewImgUrl={feature1}
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
 					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<BlogCard
 							title="Labor Law in the Philippines"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+							previewImgUrl={feature5}
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
 					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<BlogCard
 							title="Incorporating in the Philippines"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+							previewImgUrl={feature4}
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
@@ -234,7 +239,7 @@ const Homepage: React.FC = () => {
 					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 						<BlogCard
 							title="Labor Law in the Philippines"
-							previewImgUrl={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
+							previewImgUrl={feature3}
 							link={'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg'}
 						/>
 					</Col>
@@ -243,7 +248,7 @@ const Homepage: React.FC = () => {
 			<Section className="contactUsSection">
 				<img
 					className="heroImageContactUs"
-					src={`https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg`}
+					src={contactHero}
 					alt="hero banner"
 				/>
 				<Row className="heroContactBannerContentRow">
