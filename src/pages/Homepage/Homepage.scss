@@ -4,12 +4,11 @@
 	}
 	.heroBannerSection {
 		position: relative;
-        background-image:
-        url('../../assets/images/heroBanner.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        .heroBannerTitle {
+		background-image: url('../../assets/images/heroBanner.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		.heroBannerTitle {
 			font-family: 'CodecPro';
 			font-size: 63.3px;
 			font-weight: bold;
@@ -249,469 +248,465 @@
     * --------------------------------------------
     */
 	@media all and (min-width: 1024px) and (max-width: 1280px) {
-        .heroBannerSection {
-            .heroImage {
-                opacity: 0.5;
-            }
-            .heroBannerContentRow {
-                padding-top: 100px;
-                .heroBannerTitle {
-                    font-size: 45px;
-                }
-            }
-        }
-        .jumbotronSection {
-            .jumbotronContentRow {
-                padding-top: 50px;
-                padding-bottom: 50px;
-                .jumbotronSubtxt {
-                    font-size: 20px;
-                }
-                .jumbotronHeadingTxt {
-                    font-size: 35px;
-                }
-            }
-        }
-        .featureSection {
-            .featureSectionRow  {
-                .featureSectionHeaderTxt {
-                    font-size: 35px;
-                }
-            }
-            .featureSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 25px;
-            }
-        }
-        .stepSection {
-            .stepSectionRow {
-                row-gap: 0!important;
-                margin-bottom: 15px;
-                .stepSectionHeaderTxt {
-                    text-align: right;
-                    word-spacing: normal;
-                    font-size: 45px;
-                    margin-bottom: 7px;
-                }
-                .stepSectionSubTxt {
-                    text-align: center;
-                    margin-top: 0;
-                    margin-bottom: 25px;
-                }
-            }
-        }
-        .testimonialSection {
-            .testimonialSectionRow {
-                .testimonialLeft {
-                    padding: 50px;
-                    .testimonialSectionHeaderTxt {
-                        font-size: 35px;
-                        width: 100%;
-                        margin: auto;
-                    }
-                }
-                .testimonialRight {
-                    padding-bottom: 60px;
-                    .testimonialRightContent {
-                        .testimonialRightTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .demoSection {
-            .demoSectionRow {
-                .demoSectionContent {
-                    .demoSectionTxtContent {
-                        .demoSectionHeaderTxt  {
-                            font-size: 35px;
-                        }
-                        .demoSectionSubTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .blogSection {
-            .blogSectionRow {
-                .blogSectionHeaderTxt {
-                    font-size: 35px;
-                }
-                .blogSectionSubTxt {
-
-                }
-            }
-            .blogSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 25px;
-            }
-        }
-        .contactUsSection {
-            .heroImageContactUs {
-                opacity: 0.5;
-            }
-            .heroContactBannerContentRow {
-                padding-top: 100px;
-                .heroContactBannerTitle {
-                    font-size: 45px;
-                }
-            }
-        }
+		.heroBannerSection {
+			.heroImage {
+				opacity: 0.5;
+			}
+			.heroBannerContentRow {
+				padding-top: 100px;
+				.heroBannerTitle {
+					font-size: 45px;
+				}
+			}
+		}
+		.jumbotronSection {
+			.jumbotronContentRow {
+				padding-top: 50px;
+				padding-bottom: 50px;
+				.jumbotronSubtxt {
+					font-size: 20px;
+				}
+				.jumbotronHeadingTxt {
+					font-size: 35px;
+				}
+			}
+		}
+		.featureSection {
+			.featureSectionRow {
+				.featureSectionHeaderTxt {
+					font-size: 35px;
+				}
+			}
+			.featureSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 25px;
+			}
+		}
+		.stepSection {
+			.stepSectionRow {
+				row-gap: 0 !important;
+				margin-bottom: 15px;
+				.stepSectionHeaderTxt {
+					text-align: right;
+					word-spacing: normal;
+					font-size: 45px;
+					margin-bottom: 7px;
+				}
+				.stepSectionSubTxt {
+					text-align: center;
+					margin-top: 0;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		.testimonialSection {
+			.testimonialSectionRow {
+				.testimonialLeft {
+					padding: 50px;
+					.testimonialSectionHeaderTxt {
+						font-size: 35px;
+						width: 100%;
+						margin: auto;
+					}
+				}
+				.testimonialRight {
+					padding-bottom: 60px;
+					.testimonialRightContent {
+						.testimonialRightTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.demoSection {
+			.demoSectionRow {
+				.demoSectionContent {
+					.demoSectionTxtContent {
+						.demoSectionHeaderTxt {
+							font-size: 35px;
+						}
+						.demoSectionSubTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.blogSection {
+			.blogSectionRow {
+				.blogSectionHeaderTxt {
+					font-size: 35px;
+				}
+				.blogSectionSubTxt {
+				}
+			}
+			.blogSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 25px;
+			}
+		}
+		.contactUsSection {
+			.heroImageContactUs {
+				opacity: 0.5;
+			}
+			.heroContactBannerContentRow {
+				padding-top: 100px;
+				.heroContactBannerTitle {
+					font-size: 45px;
+				}
+			}
+		}
 	}
 
 	@media all and (min-width: 768px) and (max-width: 1024px) {
-        .heroBannerSection {
-            .heroImage {
-                opacity: 0.5;
-            }
-            .heroBannerContentRow {
-                padding-top: 100px;
-                .heroBannerTitle {
-                    font-size: 45px;
-                }
-            }
-        }
-        .jumbotronSection {
-            .jumbotronContentRow {
-                padding-top: 50px;
-                padding-bottom: 50px;
-                .jumbotronSubtxt {
-                    font-size: 20px;
-                }
-                .jumbotronHeadingTxt {
-                    font-size: 35px;
-                }
-            }
-        }
-        .featureSection {
-            .featureSectionRow  {
-                .featureSectionHeaderTxt {
-                    font-size: 35px;
-                }
-            }
-            .featureSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 25px;
-            }
-        }
-        .stepSection {
-            .stepSectionRow {
-                row-gap: 0!important;
-                .stepSectionHeaderTxt {
-                    text-align: center;
-                    word-spacing: normal;
-                    font-size: 45px;
-                    margin-bottom: 7px;
-                }
-                .stepSectionSubTxt {
-                    text-align: center;
-                    margin-top: 0;
-                    margin-bottom: 25px;
-                }
-            }
-        }
-        .testimonialSection {
-            .testimonialSectionRow {
-                .testimonialLeft {
-                    padding: 25px;
-                    padding-top: 60px;
-                    .testimonialSectionHeaderTxt {
-                        font-size: 35px;
-                        width: 100%;
-                        margin: auto;
-                    }
-                }
-                .testimonialRight {
-                    padding-bottom: 60px;
-                    .testimonialRightContent {
-                        .testimonialRightTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .demoSection {
-            .demoSectionRow {
-                .demoSectionContent {
-                    .demoSectionTxtContent {
-                        .demoSectionHeaderTxt  {
-                            font-size: 35px;
-                        }
-                        .demoSectionSubTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .blogSection {
-            .blogSectionRow {
-                .blogSectionHeaderTxt {
-                    font-size: 35px;
-                }
-                .blogSectionSubTxt {
-
-                }
-            }
-            .blogSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 25px;
-            }
-        }
-        .contactUsSection {
-            .heroImageContactUs {
-                opacity: 0.5;
-            }
-            .heroContactBannerContentRow {
-                padding-top: 100px;
-                .heroContactBannerTitle {
-                    font-size: 45px;
-                }
-                .callCta {
-                    width: 50%;
-                }
-            }
-        }
+		.heroBannerSection {
+			.heroImage {
+				opacity: 0.5;
+			}
+			.heroBannerContentRow {
+				padding-top: 100px;
+				.heroBannerTitle {
+					font-size: 45px;
+				}
+			}
+		}
+		.jumbotronSection {
+			.jumbotronContentRow {
+				padding-top: 50px;
+				padding-bottom: 50px;
+				.jumbotronSubtxt {
+					font-size: 20px;
+				}
+				.jumbotronHeadingTxt {
+					font-size: 35px;
+				}
+			}
+		}
+		.featureSection {
+			.featureSectionRow {
+				.featureSectionHeaderTxt {
+					font-size: 35px;
+				}
+			}
+			.featureSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 25px;
+			}
+		}
+		.stepSection {
+			.stepSectionRow {
+				row-gap: 0 !important;
+				.stepSectionHeaderTxt {
+					text-align: center;
+					word-spacing: normal;
+					font-size: 45px;
+					margin-bottom: 7px;
+				}
+				.stepSectionSubTxt {
+					text-align: center;
+					margin-top: 0;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		.testimonialSection {
+			.testimonialSectionRow {
+				.testimonialLeft {
+					padding: 25px;
+					padding-top: 60px;
+					.testimonialSectionHeaderTxt {
+						font-size: 35px;
+						width: 100%;
+						margin: auto;
+					}
+				}
+				.testimonialRight {
+					padding-bottom: 60px;
+					.testimonialRightContent {
+						.testimonialRightTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.demoSection {
+			.demoSectionRow {
+				.demoSectionContent {
+					.demoSectionTxtContent {
+						.demoSectionHeaderTxt {
+							font-size: 35px;
+						}
+						.demoSectionSubTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.blogSection {
+			.blogSectionRow {
+				.blogSectionHeaderTxt {
+					font-size: 35px;
+				}
+				.blogSectionSubTxt {
+				}
+			}
+			.blogSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 25px;
+			}
+		}
+		.contactUsSection {
+			.heroImageContactUs {
+				opacity: 0.5;
+			}
+			.heroContactBannerContentRow {
+				padding-top: 100px;
+				.heroContactBannerTitle {
+					font-size: 45px;
+				}
+				.callCta {
+					width: 50%;
+				}
+			}
+		}
 	}
 
 	@media all and (min-width: 480px) and (max-width: 768px) {
-        .heroBannerSection {
-            .heroImage {
-                opacity: 0.5;
-            }
-            .heroBannerContentRow {
-                padding-top: 100px;
-                .heroBannerTitle {
-                    font-size: 45px;
-                }
-            }
-        }
-        .jumbotronSection {
-            .jumbotronContentRow {
-                padding-top: 50px;
-                padding-bottom: 50px;
-                .jumbotronSubtxt {
-                    font-size: 20px;
-                }
-                .jumbotronHeadingTxt {
-                    font-size: 35px;
-                }
-            }
-        }
-        .featureSection {
-            .featureSectionRow  {
-                .featureSectionHeaderTxt {
-                    font-size: 35px;
-                }
-            }
-            .featureSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 25px;
-            }
-        }
-        .stepSection {
-            .stepSectionRow {
-                row-gap: 0!important;
-                .stepSectionHeaderTxt {
-                    text-align: center;
-                    word-spacing: normal;
-                    font-size: 45px;
-                    margin-bottom: 7px;
-                }
-                .stepSectionSubTxt {
-                    text-align: center;
-                    margin-top: 0;
-                    margin-bottom: 25px;
-                }
-            }
-        }
-        .testimonialSection {
-            .testimonialSectionRow {
-                .testimonialLeft {
-                    padding: 25px;
-                    padding-top: 60px;
-                    .testimonialSectionHeaderTxt {
-                        font-size: 35px;
-                        width: 100%;
-                        margin: auto;
-                    }
-                }
-                .testimonialRight {
-                    padding-bottom: 60px;
-                    .testimonialRightContent {
-                        .testimonialRightTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .demoSection {
-            .demoSectionRow {
-                .demoSectionContent {
-                    .demoSectionTxtContent {
-                        .demoSectionHeaderTxt  {
-                            font-size: 35px;
-                        }
-                        .demoSectionSubTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .blogSection {
-            .blogSectionRow {
-                .blogSectionHeaderTxt {
-                    font-size: 35px;
-                }
-                .blogSectionSubTxt {
-
-                }
-            }
-            .blogSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 25px;
-            }
-        }
-        .contactUsSection {
-            .heroImageContactUs {
-                opacity: 0.5;
-            }
-            .heroContactBannerContentRow {
-                padding-top: 100px;
-                .heroContactBannerTitle {
-                    font-size: 45px;
-                }
-                .callCta {
-                    width: 50%;
-                }
-            }
-        }
+		.heroBannerSection {
+			.heroImage {
+				opacity: 0.5;
+			}
+			.heroBannerContentRow {
+				padding-top: 100px;
+				.heroBannerTitle {
+					font-size: 45px;
+				}
+			}
+		}
+		.jumbotronSection {
+			.jumbotronContentRow {
+				padding-top: 50px;
+				padding-bottom: 50px;
+				.jumbotronSubtxt {
+					font-size: 20px;
+				}
+				.jumbotronHeadingTxt {
+					font-size: 35px;
+				}
+			}
+		}
+		.featureSection {
+			.featureSectionRow {
+				.featureSectionHeaderTxt {
+					font-size: 35px;
+				}
+			}
+			.featureSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 25px;
+			}
+		}
+		.stepSection {
+			.stepSectionRow {
+				row-gap: 0 !important;
+				.stepSectionHeaderTxt {
+					text-align: center;
+					word-spacing: normal;
+					font-size: 45px;
+					margin-bottom: 7px;
+				}
+				.stepSectionSubTxt {
+					text-align: center;
+					margin-top: 0;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		.testimonialSection {
+			.testimonialSectionRow {
+				.testimonialLeft {
+					padding: 25px;
+					padding-top: 60px;
+					.testimonialSectionHeaderTxt {
+						font-size: 35px;
+						width: 100%;
+						margin: auto;
+					}
+				}
+				.testimonialRight {
+					padding-bottom: 60px;
+					.testimonialRightContent {
+						.testimonialRightTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.demoSection {
+			.demoSectionRow {
+				.demoSectionContent {
+					.demoSectionTxtContent {
+						.demoSectionHeaderTxt {
+							font-size: 35px;
+						}
+						.demoSectionSubTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.blogSection {
+			.blogSectionRow {
+				.blogSectionHeaderTxt {
+					font-size: 35px;
+				}
+				.blogSectionSubTxt {
+				}
+			}
+			.blogSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 25px;
+			}
+		}
+		.contactUsSection {
+			.heroImageContactUs {
+				opacity: 0.5;
+			}
+			.heroContactBannerContentRow {
+				padding-top: 100px;
+				.heroContactBannerTitle {
+					font-size: 45px;
+				}
+				.callCta {
+					width: 50%;
+				}
+			}
+		}
 	}
 
 	@media all and (max-width: 480px) {
-        .sectionContainer {
-            padding: 50px 30px;
-        }
-        .heroBannerSection {
-            .heroImage {
-                opacity: 0.5;
-            }
-            .heroBannerContentRow {
-                padding-top: 90px;
-                .heroBannerTitle {
-                    font-size: 35px;
-                }
-            }
-        }
-        .jumbotronSection {
-            .jumbotronContentRow {
-                padding-top: 50px;
-                padding-bottom: 50px;
-                .jumbotronSubtxt {
-                    font-size: 15px;
-                }
-                .jumbotronHeadingTxt {
-                    font-size: 25px;
-                }
-            }
-        }
-        .featureSection {
-            .featureSectionRow  {
-                .featureSectionHeaderTxt {
-                    font-size: 25px;
-                }
-            }
-            .featureSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 20px;
-            }
-        }
-        .stepSection {
-            .stepSectionRow {
-                row-gap: 0!important;
-                .stepSectionHeaderTxt {
-                    text-align: center;
-                    word-spacing: normal;
-                    font-size: 35px;
-                }
-                .stepSectionSubTxt {
-                    text-align: center;
-                    margin-top: 0;
-                    margin-bottom: 25px;
-                }
-            }
-        }
-        .testimonialSection {
-            .testimonialSectionRow {
-                .testimonialLeft {
-                    padding: 25px;
-                    .testimonialSectionHeaderTxt {
-                        font-size: 25px;
-                        width: 100%;
-                        margin: auto;
-                    }
-                }
-                .testimonialRight {
-                    padding-bottom: 25px;
-                    .testimonialRightContent {
-                        .testimonialRightTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .demoSection {
-            .demoSectionRow {
-                .demoSectionContent {
-                    .demoSectionTxtContent {
-                        .demoSectionHeaderTxt  {
-                            font-size: 25px;
-                        }
-                        .demoSectionSubTxt {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-        .blogSection {
-            .blogSectionRow {
-                .blogSectionHeaderTxt {
-                    font-size: 25px;
-                }
-                .blogSectionSubTxt {
-
-                }
-            }
-            .blogSectionContentRow {
-                margin-left: unset!important;
-                margin-right: unset!important;
-                margin-top: 20px;
-            }
-        }
-        .contactUsSection {
-            .heroImageContactUs {
-                opacity: 0.5;
-            }
-            .heroContactBannerContentRow {
-                padding-top: 90px;
-                .heroContactBannerTitle {
-                    font-size: 35px;
-                }
-            }
-        }
+		.sectionContainer {
+			padding: 50px 30px;
+		}
+		.heroBannerSection {
+			.heroImage {
+				opacity: 0.5;
+			}
+			.heroBannerContentRow {
+				padding-top: 90px;
+				.heroBannerTitle {
+					font-size: 35px;
+				}
+			}
+		}
+		.jumbotronSection {
+			.jumbotronContentRow {
+				padding-top: 50px;
+				padding-bottom: 50px;
+				.jumbotronSubtxt {
+					font-size: 15px;
+				}
+				.jumbotronHeadingTxt {
+					font-size: 25px;
+				}
+			}
+		}
+		.featureSection {
+			.featureSectionRow {
+				.featureSectionHeaderTxt {
+					font-size: 25px;
+				}
+			}
+			.featureSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 20px;
+			}
+		}
+		.stepSection {
+			.stepSectionRow {
+				row-gap: 0 !important;
+				.stepSectionHeaderTxt {
+					text-align: center;
+					word-spacing: normal;
+					font-size: 35px;
+				}
+				.stepSectionSubTxt {
+					text-align: center;
+					margin-top: 0;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		.testimonialSection {
+			.testimonialSectionRow {
+				.testimonialLeft {
+					padding: 25px;
+					.testimonialSectionHeaderTxt {
+						font-size: 25px;
+						width: 100%;
+						margin: auto;
+					}
+				}
+				.testimonialRight {
+					padding-bottom: 25px;
+					.testimonialRightContent {
+						.testimonialRightTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.demoSection {
+			.demoSectionRow {
+				.demoSectionContent {
+					.demoSectionTxtContent {
+						.demoSectionHeaderTxt {
+							font-size: 25px;
+						}
+						.demoSectionSubTxt {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.blogSection {
+			.blogSectionRow {
+				.blogSectionHeaderTxt {
+					font-size: 25px;
+				}
+				.blogSectionSubTxt {
+				}
+			}
+			.blogSectionContentRow {
+				margin-left: unset !important;
+				margin-right: unset !important;
+				margin-top: 20px;
+			}
+		}
+		.contactUsSection {
+			.heroImageContactUs {
+				opacity: 0.5;
+			}
+			.heroContactBannerContentRow {
+				padding-top: 90px;
+				.heroContactBannerTitle {
+					font-size: 35px;
+				}
+			}
+		}
 	}
 }

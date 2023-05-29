@@ -58,7 +58,7 @@ const Homepage: React.FC = () => {
 			_fields: 'id,title',
 			categories: categoryId,
 			orderby: 'date',
-			order: 'asc',
+			order: 'asc'
 		};
 
 		try {
@@ -129,12 +129,12 @@ const Homepage: React.FC = () => {
 		const parser = new DOMParser();
 		const doc = parser.parseFromString(html, 'text/html');
 		const textContent = doc.body.textContent || '';
-	  
+
 		// Replace any HTML entities like ampersands with their corresponding characters
 		const decodedText = textContent.replace(/&amp;/g, '&');
-	  
+
 		return decodedText.trim();
-	  }
+	};
 
 	return (
 		<Layout className="homepageContainer">
