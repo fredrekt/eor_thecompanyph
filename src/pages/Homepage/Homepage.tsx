@@ -106,7 +106,7 @@ const Homepage: React.FC = () => {
 						<Skeleton active />
 					</Col>
 				</>
-			)
+			);
 		}
 		return blogs.map((data) => (
 			<Col key={data.id} xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
@@ -226,7 +226,8 @@ const Homepage: React.FC = () => {
 					</Col>
 					<Col lg={13} xl={13} xxl={13}>
 						<Typography.Paragraph className="stepSectionSubTxt">
-							This is the end-to-end process should you avail of the following services: (1) Recruitment & Sourcing, (2) Employer of Record, and (3) Workspace Solutions.
+							This is the end-to-end process should you avail of the following services: (1) Recruitment &
+							Sourcing, (2) Employer of Record, and (3) Workspace Solutions.
 						</Typography.Paragraph>
 					</Col>
 				</Row>
@@ -268,10 +269,17 @@ const Homepage: React.FC = () => {
 							<div className="demoSectionTxtContent">
 								<Typography.Title className="demoSectionHeaderTxt">What's next</Typography.Title>
 								<Typography.Paragraph className="demoSectionSubTxt">
-									Focus on other revenue-generating activities as we offer you the following services.
+									Engaging a comprehensive EoR (Employer of Record) provider is instrumental in
+									guiding you through the intricacies of international hiring. Their support extends
+									beyond the initial hiring phase, encompassing valuable advice on optimal subsequent
+									steps and the precise strategies for their implementation.
+								</Typography.Paragraph>
+								<Typography.Paragraph className="demoSectionSubTxt">
+									Ready to simplify your international hiring process and ensure seamless expansion?
+									Get in touch with us today and let’s embark on this journey together!
 								</Typography.Paragraph>
 							</div>
-							<Link to='/contact'>
+							<Link to="/contact">
 								<Button size="large" shape="round">
 									REQUEST A DEMO
 								</Button>
@@ -284,14 +292,19 @@ const Homepage: React.FC = () => {
 				<Row className="blogSectionRow" justify={'center'}>
 					<Col lg={16} xl={16} xxl={16}>
 						<Typography.Title className="blogSectionHeaderTxt">Blog</Typography.Title>
-						<Typography.Paragraph className="blogSectionSubTxt">
+						{/* <Typography.Paragraph className="blogSectionSubTxt">
 							Articles related to EOR will be here,
-						</Typography.Paragraph>
+						</Typography.Paragraph> */}
 					</Col>
 				</Row>
 				<Row gutter={[48, 48]} className="blogSectionContentRow">
 					{renderBlogs()}
 				</Row>
+				{/* <Row justify={'center'}>
+					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+						<Button size='large' type='primary'>See More</Button>
+					</Col>
+				</Row> */}
 			</Section>
 			<Section className="contactUsSection">
 				<img className="heroImageContactUs" src={contactHero} alt="hero banner" />

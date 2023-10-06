@@ -124,7 +124,7 @@
 				.testimonialRightContent {
 					margin-top: 40px;
 					.testimonialRightTxt {
-						font-size: 16px;
+						font-size: 19px;
 						font-weight: 600;
 						margin-bottom: 40px;
 					}
@@ -166,7 +166,7 @@
 				font-weight: bold;
 			}
 			.demoSectionSubTxt {
-				font-size: 16px;
+				font-size: 19px;
 				font-weight: 600;
 			}
 		}
@@ -175,6 +175,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 			height: 100%;
+			width: 50%;
 			button {
 				margin-right: auto;
 				background-color: #dcefee;
@@ -234,7 +235,7 @@
 				width: 70%;
 				background-color: #2d4048;
 				color: #ffffff;
-                border: unset;
+				border: unset;
 			}
 		}
 	}

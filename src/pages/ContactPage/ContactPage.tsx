@@ -114,7 +114,14 @@ const ContactPage: React.FC = () => {
 								<Typography.Paragraph className="mapFooterText">
 									<b>Visit Us</b>: 6th Floor, Mabuhay Tower, Abad St, Cebu City, 6000 Cebu
 								</Typography.Paragraph>
-								<iframe title="the company location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.32313584024197!2d123.9064914746985!3d10.328262720578662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999d10738b4bd%3A0x4f5536dc71c25b67!2sThe%20Company%20Cebu%20IT%20Park!5e0!3m2!1sen!2sph!4v1696589823666!5m2!1sen!2sph" height="450" style={{ border: 0, width: `100%` }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+								<iframe
+									title="the company location"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.32313584024197!2d123.9064914746985!3d10.328262720578662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999d10738b4bd%3A0x4f5536dc71c25b67!2sThe%20Company%20Cebu%20IT%20Park!5e0!3m2!1sen!2sph!4v1696589823666!5m2!1sen!2sph"
+									height="450"
+									style={{ border: 0, width: `100%` }}
+									loading="lazy"
+									referrerPolicy="no-referrer-when-downgrade"
+								></iframe>
 							</div>
 						</div>
 					</Col>
