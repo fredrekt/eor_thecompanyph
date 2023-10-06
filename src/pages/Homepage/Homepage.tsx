@@ -210,7 +210,7 @@ const Homepage: React.FC = () => {
 					</Col>
 					<Col lg={13} xl={13} xxl={13}>
 						<Typography.Paragraph className="stepSectionSubTxt">
-							Details regarding the process of the relationship here; highlight experience
+							This is the end-to-end process should you avail of the following services: (1) Recruitment & Sourcing, (2) Employer of Record, and (3) Workspace Solutions.
 						</Typography.Paragraph>
 					</Col>
 				</Row>
