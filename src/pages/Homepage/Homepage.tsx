@@ -253,9 +253,11 @@ const Homepage: React.FC = () => {
 									Focus on other revenue-generating activities as we offer you the following services.
 								</Typography.Paragraph>
 							</div>
-							<Button size="large" shape="round">
-								REQUEST A DEMO
-							</Button>
+							<Link to='/contact'>
+								<Button size="large" shape="round">
+									REQUEST A DEMO
+								</Button>
+							</Link>
 						</div>
 					</Col>
 				</Row>
