@@ -103,7 +103,7 @@ const Homepage: React.FC = () => {
 	const renderSteps = () => {
 		if (!Array.isArray(steps) || !steps.length) return;
 		return steps.map((data) => (
-			<Col key={data.id} xs={12} sm={12} md={8} lg={6} xl={4} xxl={4}>
+			<Col key={data.id} xs={24} sm={24} md={8} lg={6} xl={4} xxl={4}>
 				<StepCard
 					title={extractStringFromHTML(data.title.rendered)}
 					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
