@@ -327,6 +327,8 @@
 		.demoSection {
 			.demoSectionRow {
 				.demoSectionContent {
+					width: 100%;
+					padding: 0 50px;
 					.demoSectionTxtContent {
 						.demoSectionHeaderTxt {
 							font-size: 35px;
@@ -441,6 +443,8 @@
 		.demoSection {
 			.demoSectionRow {
 				.demoSectionContent {
+					width: 100%;
+					padding: 0 50px;
 					.demoSectionTxtContent {
 						.demoSectionHeaderTxt {
 							font-size: 35px;
@@ -558,6 +562,8 @@
 		.demoSection {
 			.demoSectionRow {
 				.demoSectionContent {
+					width: 100%;
+					padding: 0 50px;
 					.demoSectionTxtContent {
 						.demoSectionHeaderTxt {
 							font-size: 35px;
@@ -676,6 +682,7 @@
 		.demoSection {
 			.demoSectionRow {
 				.demoSectionContent {
+					width: 100%;
 					.demoSectionTxtContent {
 						.demoSectionHeaderTxt {
 							font-size: 25px;
@@ -683,6 +690,9 @@
 						.demoSectionSubTxt {
 							font-size: 14px;
 						}
+					}
+					a {
+						text-align: center;
 					}
 				}
 			}
