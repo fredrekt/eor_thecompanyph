@@ -93,8 +93,15 @@
 	}
 
 	@media all and (max-width: 480px) {
-		iframe {
-			display: none;
+		.contactFormRow {
+			height: 100%;
+			width: 100%;
+			.contactFormLeftCol {
+				background-color: #888f70;
+				.contactFormLeftContent {
+					height: 1110px;
+				}
+			}
 		}
 	}
 }
