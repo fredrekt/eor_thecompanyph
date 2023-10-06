@@ -229,8 +229,7 @@ const Homepage: React.FC = () => {
 						<img src={testimonialHero} alt="testimonial preview" className="testimonialImg" />
 						<div className="testimonialRightContent">
 							<Typography.Paragraph className="testimonialRightTxt">
-								Feature case studies of our clients here; highlight cost-effectivity and ease of
-								starting
+								Read about our client's experience through these case studies.
 							</Typography.Paragraph>
 							<Button size="large" shape="round">
 								READ OUR CASE STUDIES
