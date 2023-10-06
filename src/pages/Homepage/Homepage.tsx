@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Homepage.scss';
 import Layout from '../../layout/Layout';
 import Section from '../../components/section/Section';
-import { Button, Col, Row, Typography, message } from 'antd';
+import { Button, Col, Row, Skeleton, Typography, message } from 'antd';
 import logo from '../../assets/images/black_logo.png';
 import BlogCard from '../../components/blogCard/BlogCard';
 import FeatureCard from '../../components/featureCard/FeatureCard';
@@ -75,11 +75,13 @@ const Homepage: React.FC = () => {
 	const loadBlogs = async () => {
 		const endpoint = 'https://thecompany.ph/wp-json/wp/v2/posts';
 		const categoryIds = [27, 9]; // Replace with the ID of the category you want to filter by
+		const perPage = 3; // Replace with the number of posts you want to retrieve
 		const params = {
 			categories: categoryIds.join(','),
 			orderby: 'date', // Order posts by date
 			order: 'desc', // Sort posts in descending order
-			_embed: true // Include embedded data, such as featured images
+			_embed: true, // Include embedded data, such as featured images
+			per_page: perPage // Set the number of posts per page
 		};
 
 		try {
@@ -91,7 +93,21 @@ const Homepage: React.FC = () => {
 	};
 
 	const renderBlogs = () => {
-		if (!Array.isArray(blogs) || !blogs.length) return;
+		if (!Array.isArray(blogs) || !blogs.length) {
+			return (
+				<>
+					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+						<Skeleton active />
+					</Col>
+					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+						<Skeleton active />
+					</Col>
+					<Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+						<Skeleton active />
+					</Col>
+				</>
+			)
+		}
 		return blogs.map((data) => (
 			<Col key={data.id} xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
 				<BlogCard
