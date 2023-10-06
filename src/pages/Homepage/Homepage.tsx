@@ -75,7 +75,7 @@ const Homepage: React.FC = () => {
 	const loadBlogs = async () => {
 		const endpoint = 'https://thecompany.ph/wp-json/wp/v2/posts';
 		const categoryIds = [27, 9]; // Replace with the ID of the category you want to filter by
-		const perPage = 3; // Replace with the number of posts you want to retrieve
+		const perPage = 2; // Replace with the number of posts you want to retrieve
 		const params = {
 			categories: categoryIds.join(','),
 			orderby: 'date', // Order posts by date
