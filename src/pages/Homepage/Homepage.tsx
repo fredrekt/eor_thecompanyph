@@ -220,7 +220,7 @@ const Homepage: React.FC = () => {
 				</Row>
 			</Section>
 			<Section className="stepSection">
-				<Row gutter={[32, 32]} className="stepSectionRow" justify={'center'}>
+				<Row align={'middle'} gutter={[32, 32]} className="stepSectionRow" justify={'center'}>
 					<Col lg={7} xl={6} xxl={5}>
 						<Typography.Title className="stepSectionHeaderTxt">The Process</Typography.Title>
 					</Col>
@@ -228,6 +228,8 @@ const Homepage: React.FC = () => {
 						<Typography.Paragraph className="stepSectionSubTxt">
 							This is the end-to-end process should you avail of the following services: <br/>(1) Recruitment &
 							Sourcing, (2) Employer of Record, and (3) Workspace Solutions.
+							<br />
+							We can create custom and cost-effective processs for your convenience.
 						</Typography.Paragraph>
 					</Col>
 				</Row>
