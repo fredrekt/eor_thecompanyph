@@ -18,6 +18,9 @@ interface WPPost {
 	title: {
 		rendered: string;
 	};
+	content: {
+		rendered: string;
+	};
 	link: string;
 	_embedded: any;
 }
@@ -55,7 +58,7 @@ const Homepage: React.FC = () => {
 		const endpoint = 'https://thecompany.ph/wp-json/wp/v2/posts';
 		const categoryId = 25; // Replace with the ID of the category you want to filter by
 		const params = {
-			_fields: 'id,title',
+			_fields: 'id,title,content',
 			categories: categoryId,
 			orderby: 'date',
 			order: 'asc'
@@ -106,7 +109,7 @@ const Homepage: React.FC = () => {
 			<Col key={data.id} xs={24} sm={24} md={8} lg={6} xl={4} xxl={4}>
 				<StepCard
 					title={extractStringFromHTML(data.title.rendered)}
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis fermentum tincidunt."
+					description={extractStringFromHTML(data.content.rendered)}
 				/>
 			</Col>
 		));
