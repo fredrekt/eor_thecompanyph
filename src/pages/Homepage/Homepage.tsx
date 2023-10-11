@@ -258,7 +258,7 @@ const Homepage: React.FC = () => {
 				</Row>
 			</Section>
 			<Section className="demoSection">
-				<Row className="demoSectionRow">
+				<Row className="demoSectionRow" justify={'center'}>
 					<Col lg={12} xl={12} xxl={12}>
 						<img
 							className="heroImage"

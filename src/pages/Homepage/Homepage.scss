@@ -326,6 +326,7 @@
 		}
 		.demoSection {
 			.demoSectionRow {
+				justify-content: center;
 				.demoSectionContent {
 					width: 100%;
 					padding: 0 50px;
@@ -442,9 +443,15 @@
 		}
 		.demoSection {
 			.demoSectionRow {
+				justify-content: center;
+				.heroImage {
+					height: 450px;
+					object-fit: cover;
+					object-position: center;
+				}
 				.demoSectionContent {
 					width: 100%;
-					padding: 0 50px;
+					padding: 0 73px;
 					.demoSectionTxtContent {
 						.demoSectionHeaderTxt {
 							font-size: 35px;
@@ -561,6 +568,7 @@
 		}
 		.demoSection {
 			.demoSectionRow {
+				justify-content: center;
 				.demoSectionContent {
 					width: 100%;
 					padding: 0 50px;
@@ -681,6 +689,7 @@
 		}
 		.demoSection {
 			.demoSectionRow {
+				justify-content: center;
 				.demoSectionContent {
 					width: 100%;
 					.demoSectionTxtContent {
