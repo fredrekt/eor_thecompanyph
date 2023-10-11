@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ContactPage.scss';
 import Layout from '../../layout/Layout';
 import { Col, Form, Input, Row, Typography, Button, InputNumber, Select, message } from 'antd';
@@ -9,14 +9,21 @@ import ReCAPTCHA from 'react-google-recaptcha';
 const Fade = require('react-reveal/Fade');
 
 const ContactPage: React.FC = () => {
+	const [form] = Form.useForm();
+	const [captchaValue, setCaptchaValue] = useState<string>('');
+
 	const onFinish = (values: any) => {
+		if (!values) {
+			message.error(`Please fill up the required fields.`)
+			return;
+		}
+		if (!captchaValue) {
+			message.error(`Need to verify captcha.`)
+			return;
+		}
 		console.log('Received values of form: ', values);
 		message.success(`Message successfully sent.`);
-	};
-
-	const onFinishFailed = (errorInfo: any) => {
-		message.error(`Something went wrong in sending a message.`);
-		console.log('Failed:', errorInfo);
+		form.resetFields();
 	};
 
 	const options = [
@@ -59,6 +66,7 @@ const ContactPage: React.FC = () => {
 	];
 
 	const onChangeCaptcha = (value: any) => {
+		setCaptchaValue(value);
 		console.log('Captcha value:', value);
 	};
 
@@ -127,7 +135,7 @@ const ContactPage: React.FC = () => {
 					</Col>
 					<Col className="contactFormRightCol" xs={24} sm={24} md={12} lg={16} xl={18} xxl={18}>
 						<Typography.Title>Get in touch.</Typography.Title>
-						<Form className="contactFormComponent" onFinishFailed={onFinishFailed} onFinish={onFinish}>
+						<Form form={form} className="contactFormComponent" onFinish={onFinish}>
 							<Form.Item
 								rules={[
 									{
@@ -135,51 +143,66 @@ const ContactPage: React.FC = () => {
 										message: 'Please enter your first name.'
 									}
 								]}
+								name="firstName"
 							>
 								<Input placeholder="First Name" />
 							</Form.Item>
 							<Form.Item
 								rules={[
 									{
-										required: true
+										required: true,
+										message: 'Please enter your last name.'
 									}
 								]}
+								name="lastName"
 							>
 								<Input placeholder="Last Name" />
 							</Form.Item>
 							<Form.Item
 								rules={[
 									{
-										required: true
+										required: true,
+										message: 'Please enter your business email.'
+									},
+									{
+										type: 'email',
+										message: 'Please enter a valid email address.'
 									}
 								]}
+								name="businessEmail"
 							>
 								<Input placeholder="Business Email" />
 							</Form.Item>
 							<Form.Item
 								rules={[
 									{
-										required: true
+										required: true,
+										message: 'Please enter the name of your company.'
 									}
 								]}
+								name="companyName"
 							>
 								<Input placeholder="Company Name" />
 							</Form.Item>
 							<Form.Item
 								rules={[
 									{
-										required: true
+										required: true,
+										message: 'Please enter your phone number.'
 									}
 								]}
+								name="phoneNumber"
 							>
 								<InputNumber style={{ width: `100%` }} placeholder="Phone Number" />
 							</Form.Item>
 							<Form.Item
 								rules={[
 									{
-										required: true
+										required: true,
+										message: 'Please select your job function.'
 									}
 								]}
+								name="jobFunction"
 							>
 								<Select placeholder="Job Function">
 									<Select.Option value="Human Resources">Human Resources</Select.Option>
@@ -192,7 +215,15 @@ const ContactPage: React.FC = () => {
 									<Select.Option value="Others">Others</Select.Option>
 								</Select>
 							</Form.Item>
-							<Form.Item>
+							<Form.Item
+								rules={[
+									{
+										required: true,
+										message: 'Please select your desired inquiries.'
+									}
+								]}
+								name="category"
+							>
 								<Select
 									mode="multiple"
 									allowClear
@@ -203,9 +234,11 @@ const ContactPage: React.FC = () => {
 							<Form.Item
 								rules={[
 									{
-										required: true
+										required: true,
+										message: 'Please enter your message.'
 									}
 								]}
+								name="message"
 							>
 								<Input.TextArea style={{ width: `100%` }} placeholder="How can we help?" />
 							</Form.Item>
