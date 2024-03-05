@@ -134,7 +134,7 @@ const Homepage: React.FC = () => {
 	const renderFeatures = () => {
 		if (!Array.isArray(features) || !features.length) return;
 		return features.map((data) => (
-			<Col key={data.id} xs={24} sm={24} md={12} lg={8} xl={8} xxl={8}>
+			<Col key={data.id} xs={24} sm={24} md={12} lg={8} xl={8} xxl={6}>
 				<FeatureCard
 					title={extractStringFromHTML(data.title.rendered)}
 					previewImgUrl={data._embedded['wp:featuredmedia'][0].source_url}
@@ -200,17 +200,17 @@ const Homepage: React.FC = () => {
 							xs: 24,
 							sm: 24,
 							md: 24,
-							lg: 48,
-							xl: 48,
-							xxl: 48
+							lg: 32,
+							xl: 32,
+							xxl: 32
 						},
 						{
 							xs: 24,
 							sm: 24,
 							md: 24,
-							lg: 48,
-							xl: 48,
-							xxl: 48
+							lg: 32,
+							xl: 32,
+							xxl: 32
 						}
 					]}
 					justify={`center`}
@@ -226,8 +226,8 @@ const Homepage: React.FC = () => {
 					</Col>
 					<Col lg={13} xl={13} xxl={13}>
 						<Typography.Paragraph className="stepSectionSubTxt">
-							This is the end-to-end process should you avail of the following services: <br/>(1) Recruitment &
-							Sourcing, (2) Employer of Record, and (3) Workspace Solutions.
+							This is the end-to-end process should you avail of the following services: <br />
+							(1) Recruitment & Sourcing, (2) Employer of Record, and (3) Workspace Solutions.
 							<br />
 							We can create custom and cost-effective processs for your convenience.
 						</Typography.Paragraph>
