@@ -224,11 +224,14 @@ const Homepage: React.FC = () => {
 					<Col lg={7} xl={6} xxl={5}>
 						<Typography.Title className="stepSectionHeaderTxt">The Process</Typography.Title>
 					</Col>
-					<Col lg={13} xl={13} xxl={13}>
-						<Typography.Paragraph className="stepSectionSubTxt">
-							This is the end-to-end process should you avail of the following services: <br />
+					<Col lg={13} xl={18} xxl={13}>
+						<Typography.Paragraph className="stepSectionSubTxt mb-none">
+							This is the end-to-end process should you avail of the following services:
+						</Typography.Paragraph>
+						<Typography.Paragraph className="stepSectionSubTxt mb-none mt-none">
 							(1) Recruitment & Sourcing, (2) Employer of Record, and (3) Workspace Solutions.
-							<br />
+						</Typography.Paragraph>
+						<Typography.Paragraph className="stepSectionSubTxt mt-none">
 							We can create custom and cost-effective processs for your convenience.
 						</Typography.Paragraph>
 					</Col>
