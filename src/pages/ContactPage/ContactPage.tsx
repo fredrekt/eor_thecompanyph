@@ -14,11 +14,11 @@ const ContactPage: React.FC = () => {
 
 	const onFinish = (values: any) => {
 		if (!values) {
-			message.error(`Please fill up the required fields.`)
+			message.error(`Please fill up the required fields.`);
 			return;
 		}
 		if (!captchaValue) {
-			message.error(`Need to verify captcha.`)
+			message.error(`Need to verify captcha.`);
 			return;
 		}
 		console.log('Received values of form: ', values);
@@ -109,7 +109,7 @@ const ContactPage: React.FC = () => {
 										<a href="callto:+123456">+63 9171162861</a>
 									</li>
 									<li>
-										<a href="mailto:fredrickjohng6@gmail.com">fredrickjohng6@gmail.com</a>
+										<a href="mailto:thecompanycebu@gmail.com">thecompanycebu@gmail.com</a>
 									</li>
 									<li>
 										<Typography.Paragraph className="publicCtaFooter">
