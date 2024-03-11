@@ -84,22 +84,34 @@ const ContactPage: React.FC = () => {
 							<div className="contactSocialContainer">
 								<ul className="socialLinks">
 									<li>
-										<a href="https://fredgaringo.ga/" target="_blank" rel="noreferrer">
+										<a
+											href="https://www.facebook.com/TheCompanyCebu/"
+											target="_blank"
+											rel="noreferrer"
+										>
 											Facebook <SwapRightOutlined />
 										</a>
 									</li>
 									<li>
-										<a href="https://fredgaringo.ga/" target="_blank" rel="noreferrer">
+										<a
+											href="https://www.linkedin.com/in/the-company-cebu-79886b159/"
+											target="_blank"
+											rel="noreferrer"
+										>
 											LinkedIn <SwapRightOutlined />
 										</a>
 									</li>
 									<li>
-										<a href="https://fredgaringo.ga/" target="_blank" rel="noreferrer">
+										<a
+											href="https://www.instagram.com/thecompanycebu/?hl=en"
+											target="_blank"
+											rel="noreferrer"
+										>
 											Instagram <SwapRightOutlined />
 										</a>
 									</li>
 									<li>
-										<a href="https://fredgaringo.ga/" target="_blank" rel="noreferrer">
+										<a href="https://twitter.com/thecompanycebu" target="_blank" rel="noreferrer">
 											Twitter <SwapRightOutlined />
 										</a>
 									</li>
