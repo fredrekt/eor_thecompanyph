@@ -6,13 +6,18 @@ import logo from '../../assets/images/white_logo.png';
 import { Link } from 'react-router-dom';
 import { SwapRightOutlined } from '@ant-design/icons';
 import ReCAPTCHA from 'react-google-recaptcha';
+import emailjs from '@emailjs/browser';
 const Fade = require('react-reveal/Fade');
+
+const emailJsServiceID: string = process.env.REACT_APP_EMAIL_JS_SERVICE_ID || '';
+const emailJsTemplateID: string = process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID || '';
+const emailJsPublicKey: string = process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY || '';
 
 const ContactPage: React.FC = () => {
 	const [form] = Form.useForm();
 	const [captchaValue, setCaptchaValue] = useState<string>('');
 
-	const onFinish = (values: any) => {
+	const onFinish = async (values: any) => {
 		if (!values) {
 			message.error(`Please fill up the required fields.`);
 			return;
@@ -21,9 +26,17 @@ const ContactPage: React.FC = () => {
 			message.error(`Need to verify captcha.`);
 			return;
 		}
-		console.log('Received values of form: ', values);
-		message.success(`Message successfully sent.`);
-		form.resetFields();
+		try {
+			await emailjs.send(emailJsServiceID, emailJsTemplateID, values, {
+				publicKey: emailJsPublicKey
+			});
+			console.log('Received values of form: ', values);
+			message.success(`Message successfully sent.`);
+			form.resetFields();
+		} catch (error) {
+			message.error('Failed to send email.');
+			console.error('Failed to send email: ', error);
+		}
 	};
 
 	const options = [
