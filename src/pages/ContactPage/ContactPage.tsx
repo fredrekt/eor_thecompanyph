@@ -106,7 +106,7 @@ const ContactPage: React.FC = () => {
 								</ul>
 								<ul className="publicInfo">
 									<li>
-										<a href="callto:+123456">+63 9171162861</a>
+										<a href="callto:+639456416142">+63 9456416142</a>
 									</li>
 									<li>
 										<a href="mailto:thecompanycebu@gmail.com">thecompanycebu@gmail.com</a>
