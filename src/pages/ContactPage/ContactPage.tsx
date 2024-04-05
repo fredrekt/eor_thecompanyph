@@ -80,7 +80,7 @@ const ContactPage: React.FC = () => {
 
 	const onChangeCaptcha = (value: any) => {
 		setCaptchaValue(value);
-		console.log('Captcha value:', value);
+		console.log('Captcha value: ', value);
 	};
 
 	return (
