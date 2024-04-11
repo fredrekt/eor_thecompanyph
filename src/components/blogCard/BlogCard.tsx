@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './BlogCard.scss';
 import { Button, Typography } from 'antd';
+import ReactGA from 'react-ga4';
 
 interface BlogCardProps {
 	title: string;
@@ -9,6 +10,15 @@ interface BlogCardProps {
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({ title, previewImgUrl, link }) => {
+	const onNavigate = useCallback(() => {
+		if (!title || !link) return;
+		ReactGA.event({
+			category: 'Blog',
+			action: 'Visit',
+			label: title
+		});
+		window.open(link, '_blank', 'noopener,noreferrer');
+	}, [link, title]);
 	return (
 		<div className="blogCard">
 			<div className="blogCardPreviewImgContainer">
@@ -18,7 +28,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, previewImgUrl, link }) => {
 				<Typography.Title className="blogCardTitle" level={4}>
 					{title}
 				</Typography.Title>
-				<Button type="primary" shape="round" className="blogCardCta" href={link}>
+				<Button onClick={onNavigate} type="primary" shape="round" className="blogCardCta">
 					Learn more
 				</Button>
 			</div>
