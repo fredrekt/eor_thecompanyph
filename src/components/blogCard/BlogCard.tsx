@@ -12,7 +12,7 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = ({ title, previewImgUrl, link }) => {
 	const onNavigate = useCallback(() => {
 		if (!title || !link) return;
-		ReactGA.event({
+		ReactGA.event(title, {
 			category: 'Blog',
 			action: 'Visit',
 			label: title
